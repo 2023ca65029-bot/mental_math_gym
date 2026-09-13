@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mental Sprint</title>
+
+  <link rel="stylesheet" href="mental_sprint.css">
+
+</head>
+
+<body>
+
+  <div class="practice-container">
+
+    <!-- =========================
+         MODE SELECTION SCREEN
+         ========================= -->
+
+    <div id="mode-screen">
+
+      <h1>⚡ Mental Sprint</h1>
+
+      <p class="subtitle">
+        Choose your sprint type
+      </p>
+
+      <div class="mode-buttons">
+
+        <button class="mode-button" onclick="selectMode('addition')">
+          ➕ Addition Sprint
+        </button>
+
+        <button class="mode-button" onclick="selectMode('multiplication')">
+          ✖️ Multiplication Sprint
+        </button>
+
+        <button class="mode-button" onclick="selectMode('mixed')">
+          🔀 Mixed Sprint
+        </button>
+
+      </div>
+
+      <a href="index.html" class="back-link">
+        ← Back to Home
+      </a>
+
+    </div>
+
+
+    <!-- =========================
+         SETUP SCREEN
+         ========================= -->
+
+    <div id="setup-screen" class="hidden">
+
+      <h1 id="setup-title">Addition Sprint</h1>
+
+      <div class="input-group">
+
+        <label for="count-input">How many numbers?</label>
+        <input type="number" id="count-input" min="2" value="3">
+
+      </div>
+
+      <div id="range-fields">
+
+        <div class="input-group">
+
+          <label for="min-input">Minimum number</label>
+          <input type="number" id="min-input" min="0" value="1">
+
+        </div>
+
+        <div class="input-group">
+
+          <label for="max-input">Maximum number</label>
+          <input type="number" id="max-input" min="1" value="10">
+
+        </div>
+
+      </div>
+
+      <p id="setup-error" class="error-message"></p>
+
+      <button class="start-button" onclick="startSprint()">
+        Start Sprint
+      </button>
+
+      <button class="secondary-button" onclick="showModeSelection()">
+        Back
+      </button>
+
+    </div>
+
+
+    <!-- =========================
+         SPRINT SCREEN
+         ========================= -->
+
+    <div id="sprint-screen" class="hidden">
+
+      <h1 id="sprint-title">Addition Sprint</h1>
+
+      <p class="instruction" id="status-text">
+        Watch carefully
+      </p>
+
+      <div id="sequence-display">5</div>
+
+      <div id="answer-section" class="hidden">
+
+        <input
+          type="number"
+          id="answer-input"
+          placeholder="Enter final answer"
+          autocomplete="off"
+        >
+
+        <button class="check-button" onclick="checkAnswer()">
+          Check
+        </button>
+
+        <button class="secondary-button reveal-button" onclick="revealSequence()">
+          Reveal Sequence
+        </button>
+
+        <button class="secondary-button reveal-button" onclick="revealAnswer()">
+          Reveal Answer
+        </button>
+
+        <p id="feedback"></p>
+
+        <a href="index.html" class="back-link home-link">
+          ← Back to Home
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="mental_sprint.js"></script>
+
+</body>
+
+</html>

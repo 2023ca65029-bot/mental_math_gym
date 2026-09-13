@@ -1,34 +1,44 @@
-# Mental Math Gym
+# Math Practice Project
 
-This project is a small web-based learning app for practicing basic math skills.
+This project is a browser-based learning app designed to build mental math speed and confidence through a mix of arithmetic drills, number exercises, and date-based reasoning.
 
 ## Features
 
 ### 1. Basic Calculator
-A simple calculator for doing everyday arithmetic operations.
+A simple calculator for quick arithmetic tasks such as addition, subtraction, multiplication, division, and decimal work.
 
 ### 2. Practice Squares
-A practice game where the user is shown a number and must enter its square.
+The user is shown a number and must enter its square. This helps reinforce multiplication patterns and square values.
 
 ### 3. Practice Cubes
-A practice game where the user is shown a number and must enter its cube.
+The user is shown a number and must enter its cube. This supports stronger mental computation with powers and repeated multiplication.
 
 ### 4. Predict Day from Date
-A fun date challenge where a random date is generated and the user must choose the correct day of the week from the available options.
+A random date between 1600 and 2400 is generated, and the player must identify the correct weekday from several options. The date is shown in DD/MM/YYYY format, and the answer choices are ordered from Sunday to Saturday.
+
+### 5. Mental Sprint
+A fast-paced mental math challenge with three modes:
+
+- Addition Sprint: user enters the final answer after a sequence of numbers shown one at a time
+- Multiplication Sprint: same concept, using repeated multiplication steps
+- Mixed Sprint: combines addition, subtraction, multiplication, and division in a single safe sequence designed to keep the math whole-number friendly and manageable
+
+In Mixed Sprint mode, the app generates a valid sequence using safe operations so the final total remains consistent and the challenge is suitable for mental arithmetic practice.
 
 ## Project Structure
 
-- `index.html` — home page with links to all practice activities
-- `calculator.html` and `calculator.css` — basic calculator UI
-- `script.js` — calculator logic
-- `squares.html`, `squares.css`, `squares.js` — square-practice page
-- `cubes.html`, `cubes.css`, `cubes.js` — cube-practice page
-- `day-predict.html`, `day-predict.css`, `day-predict.js` — day prediction game
+- `index.html` — main menu for all activities
+- `calculator.html`, `calculator.css`, `script.js` — calculator page and logic
+- `squares.html`, `squares.css`, `squares.js` — square practice page
+- `cubes.html`, `cubes.css`, `cubes.js` — cube practice page
+- `day_predict.html`, `day_predict.css`, `day_predict.js` — weekday prediction game
+- `mental_sprint.html`, `mental_sprint.css`, `mental_sprint.js` — mental sprint practice with addition, multiplication, and mixed modes
+- `style.css` — shared styling for the home page
 
 ## How to Run
 
-Open the `index.html` file in a browser to start using the app.
+Open `index.html` in a browser to start the app.
 
 ## Goal
 
-The project is designed to make math practice interactive and engaging for learners by combining a calculator with repeated mental math exercises and date-based logic practice.
+The project is intended to make math learning interactive and engaging by combining practical calculation tools with focused mental arithmetic drills and logic practice in a simple static web app.
