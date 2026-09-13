@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #eef7ff, #f8f3ff);
+
+  font-family: Arial, sans-serif;
+}
+
+
+.practice-container {
+  width: 440px;
+
+  padding: 40px 30px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(42, 87, 146, 0.14);
+
+  text-align: center;
+}
+
+
+h1 {
+  margin-bottom: 10px;
+
+  color: #222;
+
+  font-size: 32px;
+}
+
+
+.instruction {
+  margin-top: 25px;
+
+  margin-bottom: 12px;
+
+  color: #666;
+
+  font-size: 18px;
+}
+
+
+#date-display {
+  margin: 10px 0 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  color: #222;
+
+  font-size: 42px;
+
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+
+.answer-options {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+
+  gap: 12px;
+}
+
+
+.answer-option {
+  padding: 16px 10px;
+
+  border: 2px solid #dfeaf7;
+
+  border-radius: 12px;
+
+  background: #f7fbff;
+
+  color: #1a1a1a;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.answer-option:hover {
+  background: #eaf4ff;
+
+  border-color: #b7d5ff;
+}
+
+
+.answer-option:active {
+  transform: scale(0.98);
+}
+
+
+#feedback {
+  min-height: 30px;
+
+  margin-top: 18px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+
+.correct {
+  color: #27ae60;
+}
+
+
+.incorrect {
+  color: #e74c3c;
+}
+
+
+.new-button {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 20px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #1d7ae8;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.new-button:hover {
+  background: #1065c0;
+}
+
+
+.back-link {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: #666;
+
+  text-decoration: none;
+}
+
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 500px) {
+
+  .practice-container {
+    width: 90%;
+
+    padding: 28px 20px;
+  }
+
+  .answer-options {
+    grid-template-columns: 1fr;
+  }
+
+  #date-display {
+    font-size: 30px;
+  }
+}

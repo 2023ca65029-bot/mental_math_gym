@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #f0f2f5;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.practice-container {
+  width: 420px;
+
+  padding: 40px 30px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.12);
+
+  text-align: center;
+}
+
+
+/* =========================
+   HEADING
+   ========================= */
+
+h1 {
+  margin-bottom: 10px;
+
+  color: #222;
+
+  font-size: 32px;
+}
+
+
+/* =========================
+   SUBTITLE
+   ========================= */
+
+.subtitle {
+  margin-bottom: 30px;
+
+  color: #666;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   RANGE
+   ========================= */
+
+.range-inputs {
+  display: flex;
+
+  justify-content: center;
+  align-items: end;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+
+.input-group {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.input-group label {
+  margin-bottom: 7px;
+
+  color: #555;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+
+.input-group input {
+  width: 130px;
+
+  height: 50px;
+
+  padding: 10px;
+
+  border: 2px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 20px;
+
+  text-align: center;
+
+  outline: none;
+}
+
+
+.input-group input:focus {
+  border-color: #4a90e2;
+}
+
+
+.to-text {
+  padding-bottom: 15px;
+
+  color: #777;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   ERROR
+   ========================= */
+
+.error-message {
+  min-height: 22px;
+
+  margin-bottom: 10px;
+
+  color: #e74c3c;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   START BUTTON
+   ========================= */
+
+.start-button {
+  width: 100%;
+
+  height: 55px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #27ae60;
+
+  color: white;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.start-button:hover {
+  background: #219150;
+}
+
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
+
+/* =========================
+   PRACTICE
+   ========================= */
+
+.instruction {
+  margin-top: 25px;
+
+  margin-bottom: 10px;
+
+  color: #666;
+
+  font-size: 18px;
+}
+
+
+/* =========================
+   NUMBER
+   ========================= */
+
+#number-display {
+  margin: 10px 0 25px;
+
+  color: #222;
+
+  font-size: 64px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   ANSWER AREA
+   ========================= */
+
+.answer-area {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+#answer-input {
+  flex: 1;
+
+  height: 55px;
+
+  padding: 10px;
+
+  border: 2px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 20px;
+
+  text-align: center;
+
+  outline: none;
+}
+
+
+#answer-input:focus {
+  border-color: #4a90e2;
+}
+
+
+/* =========================
+   CHECK BUTTON
+   ========================= */
+
+.check-button {
+  width: 100px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #4a90e2;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.check-button:hover {
+  background: #357abd;
+}
+
+
+/* =========================
+   FEEDBACK
+   ========================= */
+
+#feedback {
+  min-height: 30px;
+
+  margin-top: 15px;
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+
+.correct {
+  color: #27ae60;
+}
+
+
+.incorrect {
+  color: #e74c3c;
+}
+
+
+/* =========================
+   STOP BUTTON
+   ========================= */
+
+.stop-button {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 25px;
+
+  border: 2px solid #e74c3c;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #e74c3c;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+.stop-button:hover {
+  background: #e74c3c;
+
+  color: white;
+}
+
+
+/* =========================
+   BACK LINK
+   ========================= */
+
+.back-link {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #777;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+
+.back-link:hover {
+  color: #222;
+}
+
+
+/* =========================
+   HIDDEN
+   ========================= */
+
+.hidden {
+  display: none;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 500px) {
+
+  .practice-container {
+    width: 90%;
+
+    padding: 30px 20px;
+  }
+
+
+  .range-inputs {
+    gap: 8px;
+  }
+
+
+  .input-group input {
+    width: 110px;
+  }
+
+
+  #number-display {
+    font-size: 52px;
+  }
+
+}
