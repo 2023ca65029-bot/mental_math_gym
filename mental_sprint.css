@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f3ff;
+  font-family: Arial, sans-serif;
+}
+
+.practice-container {
+  width: 460px;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(107, 70, 160, 0.12);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #222;
+  font-size: 32px;
+}
+
+.subtitle,
+.instruction {
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 18px;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mode-button,
+.start-button,
+.secondary-button,
+.check-button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.mode-button {
+  background: #8e44ad;
+  color: white;
+}
+
+.mode-button:hover,
+.start-button:hover,
+.check-button:hover,
+.secondary-button:hover {
+  filter: brightness(0.96);
+}
+
+.start-button,
+.check-button {
+  background: #27ae60;
+  color: white;
+}
+
+.secondary-button {
+  margin-top: 14px;
+  background: #eaf2ff;
+  color: #1f3c88;
+}
+
+.reveal-button {
+  margin-top: 8px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #666;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.home-link {
+  margin-top: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.input-group input:focus {
+  border-color: #8e44ad;
+  outline: none;
+}
+
+.error-message {
+  min-height: 20px;
+  margin-bottom: 10px;
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+#sequence-display {
+  margin: 10px 0 25px;
+  color: #222;
+  font-size: 56px;
+  font-weight: bold;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#answer-section {
+  margin-top: 20px;
+}
+
+#answer-input {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#feedback {
+  min-height: 28px;
+  margin: 12px 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.correct {
+  color: #27ae60;
+}
+
+.incorrect {
+  color: #e74c3c;
+}
+
+@media (max-width: 500px) {
+  .practice-container {
+    width: 90%;
+    padding: 28px 18px;
+  }
+}
